@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Map</title>
+</head>
+
+<body>
+
+    <h1>IMAGE MAP</h1>
+    <p>Click on different areas of the image:</p>
+
+    <img src="images1.jpeg" usemap="#mymap" width="500" height="600">
+
+    <map name="mymap">
+
+        <!-- Rectangle: TV -->
+        <area shape="rect"
+              coords="170,210,390,295"
+              href="#"
+              alt="TV"
+              onclick="showInfo('Rectangle: This is rectangular region.'); return false;">
+
+        <!-- Circle: Coffee table -->
+        <area shape="circle"
+              coords="250,510,100"
+              href="#"
+              alt="Coffee table"
+              onclick="showInfo('Circle: This is circular region.'); return false;">
+
+        <!-- Polygon: Cabinet under the TV -->
+        <area shape="poly"
+              coords="100,335,450,335,450,385,100,385"
+              href="#"
+              alt="TV Cabinet"
+              onclick="showInfo('Polygon: This is a polygon shaped.'); return false;">
+
+    </map>
+
+    <h2>Information</h2>
+
+    <p id="info">Click a mapped area to display information.</p>
+
+    <script>
+        function showInfo(message) {
+            document.getElementById("info").textContent = message;
+        }
+    </script>
+
+</body>
+</html>
+

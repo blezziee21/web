@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Onam - The Festival of Kerala</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff8dc;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #166534;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav h2 {
+            color: #ffd700;
+            font-size: 28px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ffd700;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(
+                rgba(0, 0, 0, 0.35),
+                rgba(0, 0, 0, 0.35)
+            ),
+            url("onam.jpeg") center/cover;
+        }
+
+        .hero-content {
+            color: white;
+            max-width: 800px;
+        }
+
+        .hero h1 {
+            font-size: 70px;
+            color: #ffd700;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 5px black;
+        }
+
+        .hero p {
+            font-size: 24px;
+            font-style: italic;
+        }
+
+        .hero-button {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 25px;
+            background-color: #f59e0b;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+        }
+
+        .hero-button:hover {
+            background-color: #d97706;
+        }
+
+        /* About Section */
+        .about {
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .about h2 {
+            color: #166534;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .about p {
+            font-size: 18px;
+            color: #555;
+        }
+
+        /* Information Cards */
+        .cards {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 20px;
+            display: flex;
+            gap: 25px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background-color: white;
+            width: 300px;
+            padding: 30px 20px;
+            text-align: center;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+        }
+
+        .card h3 {
+            color: #d97706;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #666;
+        }
+
+        /* Back Button */
+        .back {
+            text-align: center;
+            margin: 40px;
+        }
+
+        .back a {
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: #166534;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+        }
+
+        .back a:hover {
+            background-color: #14532d;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #166534;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 50px;
+        }
+
+        footer span {
+            color: #ffd700;
+            font-weight: bold;
+        }
+
+        /* Mobile Design */
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            nav a {
+                margin-left: 10px;
+            }
+
+            .hero h1 {
+                font-size: 50px;
+            }
+
+            .hero p {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <h2>🌼 ONAM</h2>
+
+        <div>
+            <a href="festival.html">Home</a>
+            <a href="#about">About</a>
+            <a href="#traditions">Traditions</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>ONAM</h1>
+            <p>The Festival of Kerala</p>
+
+            <a href="#about" class="hero-button">
+                Discover Onam
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2>About Onam</h2>
+
+        <p>
+            Onam is the most celebrated festival of Kerala, filled with
+            happiness, unity, culture, and tradition. It is celebrated
+            during the Malayalam month of Chingam, usually in August or
+            September. The festival represents prosperity, harvest,
+            and the legendary return of King Mahabali.
+        </p>
+    </section>
+
+    <!-- Traditions -->
+    <section class="cards" id="traditions">
+
+        <div class="card">
+            <h3>🌸 Pookalam</h3>
+            <p>
+                Beautiful flower decorations called Pookalam are
+                created in front of homes during Onam celebrations.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🍛 Onam Sadya</h3>
+            <p>
+                A traditional vegetarian feast served on banana leaves,
+                featuring a variety of delicious Kerala dishes.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>👑 Mahabali</h3>
+            <p>
+                Onam celebrates the annual visit of the legendary
+                King Mahabali, remembered for his generosity and kindness.
+            </p>
+        </div>
+
+    </section>
+
+    <!-- Back to Home -->
+    <div class="back">
+        <a href="festival.html">← Back to Home</a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 <span>Onam Festival</span> | The Festival of Kerala</p>
+    </footer>
+
+</body>
+</html>

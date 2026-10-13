@@ -1,0 +1,41 @@
+/* Universal Selector */
+* {
+    font-family: Arial, sans-serif;
+}
+
+/* Element Selector */
+p.element-selector {
+    color: darkblue;
+    background-color: lightblue;
+    padding: 15px;
+}
+
+/* Class Selector */
+.class-selector {
+    color: darkgreen;
+    background-color: lightgreen;
+    padding: 15px;
+}
+
+/* ID Selector */
+#id-selector {
+    color: darkred;
+    background-color: lightcoral;
+    padding: 15px;
+}
+
+/* Universal-style demonstration */
+.universal-selector {
+    color: purple;
+    background-color: lavender;
+    padding: 15px;
+}
+
+/* Group Selector */
+.group-selector,
+h1 {
+    color: brown;
+    background-color: beige;
+    padding: 15px;
+}
+

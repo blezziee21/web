@@ -1,0 +1,316 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Holi - Festival of Colors</title>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+        background: #fff7fc;
+        color: #333;
+        line-height: 1.7;
+    }
+
+    /* Navigation Bar */
+    nav {
+        background: linear-gradient(90deg, #d81b60, #8e24aa);
+        padding: 15px 8%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        color: white;
+        font-size: 22px;
+        font-weight: bold;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    nav a:hover {
+        color: #ffe082;
+    }
+
+    /* Hero Section */
+    .hero {
+        background: linear-gradient(
+            135deg,
+            rgba(216, 27, 96, 0.9),
+            rgba(30, 136, 229, 0.85),
+            rgba(255, 193, 7, 0.85)
+        );
+
+        color: white;
+        text-align: center;
+        padding: 65px 20px;
+    }
+
+    .hero h1 {
+        font-size: 52px;
+        margin-bottom: 10px;
+        letter-spacing: 2px;
+    }
+
+    .hero p {
+        font-size: 20px;
+        font-style: italic;
+    }
+
+    /* Main Container */
+    .container {
+        max-width: 1000px;
+        margin: 45px auto;
+        padding: 0 25px;
+    }
+
+    /* Image */
+    .festival-image {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .festival-image img {
+        width: 100%;
+        max-width: 700px;
+        height: 380px;
+        object-fit: cover;
+        border-radius: 20px;
+        border: 6px solid white;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+    }
+
+    /* Content Cards */
+    .content-card {
+        background: white;
+        padding: 30px;
+        margin-bottom: 25px;
+        border-radius: 16px;
+        box-shadow: 0 7px 22px rgba(0, 0, 0, 0.1);
+        border-left: 6px solid #d81b60;
+    }
+
+    .content-card h2 {
+        color: #8e24aa;
+        margin-bottom: 12px;
+        font-size: 28px;
+    }
+
+    .content-card p {
+        color: #555;
+        font-size: 17px;
+        text-align: justify;
+    }
+
+    /* Holi Highlights */
+    .highlights {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+        margin-top: 25px;
+    }
+
+    .highlight {
+        padding: 20px 10px;
+        text-align: center;
+        border-radius: 14px;
+        color: white;
+        transition: 0.3s;
+    }
+
+    .highlight:hover {
+        transform: translateY(-7px);
+    }
+
+    .highlight span {
+        display: block;
+        font-size: 32px;
+        margin-bottom: 5px;
+    }
+
+    .highlight strong {
+        font-size: 16px;
+    }
+
+    .pink {
+        background: #e91e63;
+    }
+
+    .blue {
+        background: #2196f3;
+    }
+
+    .yellow {
+        background: #f9a825;
+    }
+
+    .green {
+        background: #43a047;
+    }
+
+    /* Back Button */
+    .back {
+        text-align: center;
+        margin: 40px 0;
+    }
+
+    .back a {
+        display: inline-block;
+        background: linear-gradient(90deg, #d81b60, #8e24aa);
+        color: white;
+        text-decoration: none;
+        padding: 12px 30px;
+        border-radius: 25px;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+    .back a:hover {
+        transform: scale(1.05);
+        box-shadow: 0 6px 15px rgba(216, 27, 96, 0.3);
+    }
+
+    /* Footer */
+    footer {
+        background: #4a1238;
+        color: white;
+        text-align: center;
+        padding: 25px;
+        margin-top: 50px;
+    }
+
+    footer p {
+        margin: 5px;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 700px) {
+        .hero h1 {
+            font-size: 36px;
+        }
+
+        .festival-image img {
+            height: 250px;
+        }
+
+        .highlights {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .logo {
+            font-size: 18px;
+        }
+    }
+
+    @media (max-width: 450px) {
+        .highlights {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+
+</head> <body>
+<!-- Navigation -->
+<nav>
+    <div class="logo">🇮🇳 Festivals of India</div>
+    <a href="festival.html">Home</a>
+</nav>
+
+
+<!-- Hero Section -->
+<section class="hero">
+    <h1>🌈 HOLI</h1>
+    <p>The Festival of Colors, Love and New Beginnings</p>
+</section>
+
+
+<!-- Main Content -->
+<div class="container">
+
+    <!-- Festival Image -->
+    <div class="festival-image">
+        <img src="holi.jpeg" alt="Holi Festival">
+    </div>
+
+
+    <!-- About Holi -->
+    <div class="content-card">
+        <h2>🎨 A Celebration of Color and Joy</h2>
+
+        <p>
+            Holi is a vibrant Hindu spring festival celebrated across India
+            and by communities around the world. It is popularly known as
+            the Festival of Colours, Love and New Beginnings. Holi marks the
+            arrival of spring and the end of winter. It is a time when people
+            meet, play, laugh, forgive one another and celebrate together.
+        </p>
+    </div>
+
+
+    <!-- Spirit of Holi -->
+    <div class="content-card">
+        <h2>💖 The Spirit of Holi</h2>
+
+        <p>
+            Holi represents happiness, friendship and the victory of good
+            over evil. It is a time to forgive, celebrate and create beautiful
+            memories with family and friends. The vibrant colors of Holi
+            symbolize joy, unity and the beauty of togetherness.
+        </p>
+    </div>
+
+
+    <!-- Highlights -->
+    <div class="content-card">
+        <h2>🌈 Holi Highlights</h2>
+
+        <div class="highlights">
+
+            <div class="highlight pink">
+                <span>🎨</span>
+                <strong>Colors</strong>
+            </div>
+
+            <div class="highlight blue">
+                <span>💦</span>
+                <strong>Water Play</strong>
+            </div>
+
+            <div class="highlight yellow">
+                <span>🍬</span>
+                <strong>Sweets</strong>
+            </div>
+
+            <div class="highlight green">
+                <span>🤝</span>
+                <strong>Togetherness</strong>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Back Button -->
+    <div class="back">
+        <a href="festival.html">← Back to Home</a>
+    </div>
+
+</div>
+
+
+<!-- Footer -->
+<footer>
+    <p>🌈 Festivals of India</p>
+    <p>Celebrating India's rich culture and traditions</p>
+    <p>&copy; 2026 Festivals of India</p>
+</footer>
+
+</body> </html>

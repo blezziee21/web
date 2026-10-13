@@ -1,0 +1,295 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Diwali - Festival of Lights</title>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+        background: #fff8e7;
+        color: #333;
+        line-height: 1.7;
+    }
+
+    /* Navigation Bar */
+    nav {
+        background: #7b1e3a;
+        padding: 15px 8%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        color: white;
+        font-size: 22px;
+        font-weight: bold;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    nav a:hover {
+        color: #ffd166;
+    }
+
+    /* Hero Section */
+    .hero {
+        background: linear-gradient(
+            rgba(230, 81, 0, 0.75),
+            rgba(123, 30, 58, 0.85)
+        );
+
+        color: white;
+        text-align: center;
+        padding: 60px 20px;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+        margin-bottom: 10px;
+    }
+
+    .hero p {
+        font-size: 19px;
+    }
+
+    /* Main Content */
+    .container {
+        max-width: 1000px;
+        margin: 45px auto;
+        padding: 0 25px;
+    }
+
+    /* Image */
+    .festival-image {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .festival-image img {
+        width: 100%;
+        max-width: 650px;
+        height: 380px;
+        object-fit: cover;
+        border-radius: 18px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        border: 5px solid white;
+    }
+
+    /* Content Cards */
+    .content-card {
+        background: white;
+        padding: 30px;
+        margin-bottom: 25px;
+        border-radius: 15px;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .content-card h2 {
+        color: #a63d00;
+        margin-bottom: 12px;
+        font-size: 28px;
+    }
+
+    .content-card p {
+        color: #555;
+        font-size: 17px;
+    }
+
+    /* Celebration List */
+    ol {
+        padding-left: 25px;
+        color: #555;
+    }
+
+    ol li {
+        padding: 7px 0;
+        font-size: 17px;
+    }
+
+    ol li::marker {
+        color: #e65100;
+        font-weight: bold;
+    }
+
+    /* Diwali Highlights */
+    .highlights {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+        margin-top: 25px;
+    }
+
+    .highlight {
+        background: #fff3cd;
+        padding: 20px 10px;
+        text-align: center;
+        border-radius: 12px;
+        border: 1px solid #ffd166;
+    }
+
+    .highlight span {
+        display: block;
+        font-size: 30px;
+        margin-bottom: 5px;
+    }
+
+    .highlight strong {
+        color: #7b1e3a;
+    }
+
+    /* Back Button */
+    .back {
+        text-align: center;
+        margin: 40px 0;
+    }
+
+    .back a {
+        display: inline-block;
+        background: #7b1e3a;
+        color: white;
+        text-decoration: none;
+        padding: 12px 28px;
+        border-radius: 25px;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+    .back a:hover {
+        background: #e65100;
+        transform: scale(1.05);
+    }
+
+    /* Footer */
+    footer {
+        background: #35121d;
+        color: white;
+        text-align: center;
+        padding: 25px;
+        margin-top: 50px;
+    }
+
+    /* Mobile */
+    @media (max-width: 700px) {
+        .hero h1 {
+            font-size: 34px;
+        }
+
+        .festival-image img {
+            height: 250px;
+        }
+
+        .highlights {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .logo {
+            font-size: 18px;
+        }
+    }
+</style>
+
+</head> <body>
+<!-- Navigation -->
+<nav>
+    <div class="logo">🇮🇳 Festivals of India</div>
+    <a href="festival.html">Home</a>
+</nav>
+
+
+<!-- Hero -->
+<section class="hero">
+    <h1>🪔 Diwali - Festival of Lights</h1>
+    <p>Celebrating light, happiness, goodness and togetherness</p>
+</section>
+
+
+<!-- Main Content -->
+<div class="container">
+
+    <!-- Image -->
+    <div class="festival-image">
+        <img src="diwali.jpeg" alt="Diwali Festival">
+    </div>
+
+
+    <!-- About Diwali -->
+    <div class="content-card">
+        <h2>✨ About Diwali</h2>
+
+        <p>
+            Diwali is the major Festival of Lights celebrated across India.
+            It symbolizes the spiritual victory of light over darkness and
+            good over evil. Homes are decorated with diyas, candles and
+            colorful rangoli, creating a beautiful and joyful atmosphere.
+        </p>
+    </div>
+
+
+    <!-- Celebrations -->
+    <div class="content-card">
+        <h2>🎉 Diwali Celebrations</h2>
+
+        <ol>
+            <li>Lighting diyas and candles</li>
+            <li>Decorating homes with colorful rangoli</li>
+            <li>Exchanging sweets and gifts</li>
+            <li>Spending time with family and friends</li>
+        </ol>
+    </div>
+
+
+    <!-- Highlights -->
+    <div class="content-card">
+        <h2>🪔 Diwali Highlights</h2>
+
+        <div class="highlights">
+
+            <div class="highlight">
+                <span>🪔</span>
+                <strong>Diyas</strong>
+            </div>
+
+            <div class="highlight">
+                <span>🎨</span>
+                <strong>Rangoli</strong>
+            </div>
+
+            <div class="highlight">
+                <span>🍬</span>
+                <strong>Sweets</strong>
+            </div>
+
+            <div class="highlight">
+                <span>🎁</span>
+                <strong>Gifts</strong>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Back Button -->
+    <div class="back">
+        <a href="festival.html">← Back to Home</a>
+    </div>
+
+</div>
+
+
+<!-- Footer -->
+<footer>
+    <p>🪔 Festivals of India</p>
+    <p>Celebrating India's rich culture and traditions</p>
+    <p>&copy; 2026 Festivals of India</p>
+</footer>
+
+</body> </html>

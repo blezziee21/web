@@ -1,0 +1,423 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Festivals of India</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+        background: #fffaf0;
+        color: #333;
+        line-height: 1.6;
+    }
+
+    /* Navigation Bar */
+    nav {
+        background: #7b1e3a;
+        padding: 15px 8%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+
+    nav .logo {
+        color: white;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        gap: 30px;
+    }
+
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+        color: #ffd166;
+    }
+
+    /* Hero Section */
+    .hero {
+        min-height: 420px;
+        background: linear-gradient(
+            rgba(123, 30, 58, 0.85),
+            rgba(230, 81, 0, 0.75)
+        ),
+        url("india-festival.jpeg") center/cover no-repeat;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+        padding: 40px 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 55px;
+        margin-bottom: 15px;
+        letter-spacing: 2px;
+    }
+
+    .hero-content p {
+        font-size: 20px;
+        max-width: 750px;
+        margin: auto;
+    }
+
+    .hero-button {
+        display: inline-block;
+        margin-top: 25px;
+        padding: 12px 28px;
+        background: #ffd166;
+        color: #7b1e3a;
+        text-decoration: none;
+        border-radius: 25px;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+    .hero-button:hover {
+        background: white;
+        transform: scale(1.05);
+    }
+
+    /* Introduction */
+    .intro {
+        text-align: center;
+        padding: 55px 10%;
+    }
+
+    .intro h2 {
+        color: #7b1e3a;
+        font-size: 32px;
+        margin-bottom: 15px;
+    }
+
+    .intro p {
+        max-width: 850px;
+        margin: auto;
+        color: #555;
+        font-size: 17px;
+    }
+
+    /* Festival Section */
+    .festivals {
+        padding: 20px 8% 70px;
+    }
+
+    .festivals h2 {
+        text-align: center;
+        color: #7b1e3a;
+        font-size: 35px;
+        margin-bottom: 40px;
+    }
+
+    .festival-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+
+    /* Festival Cards */
+    .card {
+        background: white;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+        transition: 0.4s;
+    }
+
+    .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    }
+
+    .card img {
+        width: 100%;
+        height: 240px;
+        object-fit: cover;
+        display: block;
+    }
+
+    .card-content {
+        padding: 25px;
+        text-align: center;
+    }
+
+    .card-content h3 {
+        font-size: 28px;
+        margin-bottom: 12px;
+    }
+
+    .diwali h3 {
+        color: #e65100;
+    }
+
+    .holi h3 {
+        color: #d81b60;
+    }
+
+    .onam h3 {
+        color: #2e7d32;
+    }
+
+    .card-content p {
+        color: #666;
+        margin-bottom: 20px;
+    }
+
+    .learn-more {
+        display: inline-block;
+        padding: 10px 22px;
+        border-radius: 20px;
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+    .diwali .learn-more {
+        background: #e65100;
+    }
+
+    .holi .learn-more {
+        background: #d81b60;
+    }
+
+    .onam .learn-more {
+        background: #2e7d32;
+    }
+
+    .learn-more:hover {
+        opacity: 0.8;
+        transform: scale(1.05);
+    }
+
+    /* Quote Section */
+    .quote {
+        background: linear-gradient(135deg, #7b1e3a, #e65100);
+        color: white;
+        text-align: center;
+        padding: 60px 20px;
+    }
+
+    .quote h2 {
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+
+    .quote p {
+        font-size: 18px;
+        font-style: italic;
+    }
+
+    /* Footer */
+    footer {
+        background: #35121d;
+        color: white;
+        text-align: center;
+        padding: 25px;
+    }
+
+    footer p {
+        margin: 5px;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 900px) {
+        .festival-container {
+            grid-template-columns: 1fr;
+            max-width: 600px;
+            margin: auto;
+        }
+
+        .hero-content h1 {
+            font-size: 42px;
+        }
+
+        nav {
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+
+    @media (max-width: 500px) {
+        nav ul {
+            gap: 15px;
+        }
+
+        nav ul li a {
+            font-size: 14px;
+        }
+
+        .hero-content h1 {
+            font-size: 34px;
+        }
+
+        .hero-content p {
+            font-size: 16px;
+        }
+    }
+</style>
+
+</head> <body>
+<!-- Navigation -->
+<nav>
+    <div class="logo">🇮🇳 Festivals of India</div>
+
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#festivals">Festivals</a></li>
+        <li><a href="#about">About</a></li>
+    </ul>
+</nav>
+
+
+<!-- Hero Section -->
+<section class="hero" id="home">
+    <div class="hero-content">
+        <h1>Festivals of India</h1>
+
+        <p>
+            Celebrating the Colors, Lights and Traditions of India
+        </p>
+
+        <a href="#festivals" class="hero-button">
+            Explore Festivals
+        </a>
+    </div>
+</section>
+
+
+<!-- Introduction -->
+<section class="intro" id="about">
+    <h2>A Land of Celebrations</h2>
+
+    <p>
+        India is a land of diverse cultures, traditions and festivals.
+        People from different parts of the country celebrate various
+        festivals with great joy and enthusiasm. Diwali, Holi and Onam
+        are some of the major festivals celebrated across India.
+    </p>
+</section>
+
+
+<!-- Festivals -->
+<section class="festivals" id="festivals">
+
+    <h2>Popular Indian Festivals</h2>
+
+    <div class="festival-container">
+
+        <!-- Diwali Card -->
+        <div class="card diwali">
+
+            <a href="diwali.html" target="_blank">
+                <img src="diwali1.jpeg" alt="Diwali Festival">
+            </a>
+
+            <div class="card-content">
+
+                <h3>🪔 Diwali</h3>
+
+                <p>
+                    Diwali is known as the Festival of Lights.
+                    People decorate their homes with lamps, candles
+                    and colorful decorations. It symbolizes the
+                    victory of light over darkness.
+                </p>
+
+                <a href="diwali.html" target="_blank" class="learn-more">
+                    Discover Diwali
+                </a>
+
+            </div>
+        </div>
+
+
+        <!-- Holi Card -->
+        <div class="card holi">
+
+            <a href="holi.html" target="_blank">
+                <img src="holi1.jpg" alt="Holi Festival">
+            </a>
+
+            <div class="card-content">
+
+                <h3>🌈 Holi</h3>
+
+                <p>
+                    Holi is the Festival of Colors. People celebrate
+                    Holi by playing with colorful powders and water.
+                    It is a festival of happiness, friendship and
+                    togetherness.
+                </p>
+
+                <a href="holi.html" target="_blank" class="learn-more">
+                    Discover Holi
+                </a>
+
+            </div>
+        </div>
+
+
+        <!-- Onam Card -->
+        <div class="card onam">
+
+            <a href="onam.html" target="_blank">
+                <img src="onam1.jpeg" alt="Onam Festival">
+            </a>
+
+            <div class="card-content">
+
+                <h3>🌸 Onam</h3>
+
+                <p>
+                    Onam is a major festival of Kerala. It is celebrated
+                    with flower decorations, traditional dances, games
+                    and the famous Onam feast called Onasadya.
+                </p>
+
+                <a href="onam.html" target="_blank" class="learn-more">
+                    Discover Onam
+                </a>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- Quote -->
+<section class="quote">
+    <h2>Unity in Diversity</h2>
+
+    <p>
+        "Festivals bring people together and make every moment special."
+    </p>
+</section>
+
+
+<!-- Footer -->
+<footer>
+    <p>🇮🇳 Festivals of India</p>
+    <p>Celebrating India's rich culture and traditions</p>
+    <p>&copy; 2026 Festivals of India. All Rights Reserved.</p>
+</footer>
+
+</body> </html>

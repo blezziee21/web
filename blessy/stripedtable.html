@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Striped Table</title>
+
+    <style>
+        #studentTable {
+            width: 600px;
+            border-collapse: collapse;
+            font-family: Arial, sans-serif;
+        }
+
+        #studentTable tr {
+            border: 1px solid #333;
+        }
+
+        #studentTable th,
+        #studentTable td {
+            border: 1px solid #333;
+        }
+
+        #studentTable th {
+            padding: 10px;
+            text-align: left;
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        #studentTable td {
+            padding: 15px;
+        }
+
+        /* Alternate background color for even-numbered rows */
+        #studentTable tr:nth-child(even) {
+            background-color: grey;
+        }
+
+        /* Hover effect */
+        #studentTable tr:hover {
+            background-color: #d1e7dd;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Student Details</h2>
+
+    <table id="studentTable">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Course</th>
+        </tr>
+
+        <tr>
+            <td>Arun</td>
+            <td>20</td>
+            <td>BCA</td>
+        </tr>
+
+        <tr>
+            <td>Meera</td>
+            <td>21</td>
+            <td>BSc CS</td>
+        </tr>
+
+        <tr>
+            <td>Rahul</td>
+            <td>20</td>
+            <td>BCA</td>
+        </tr>
+
+        <tr>
+            <td>Anu</td>
+            <td>22</td>
+            <td>BSc CS</td>
+        </tr>
+    </table>
+
+</body>
+</html>
+
